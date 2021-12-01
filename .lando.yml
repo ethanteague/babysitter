@@ -1,0 +1,14 @@
+name: sitter
+recipe: drupal9
+config:
+  webroot: docroot
+  xdebug: true
+services:
+  appserver:
+    build:
+      - composer install
+tooling:
+  drush:
+    service: appserver
+    env:
+      DRUSH_OPTIONS_URI: "https://sitter.lndo.site"

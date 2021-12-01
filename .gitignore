@@ -1,0 +1,64 @@
+# Ignore binaries.
+/bin
+
+# Ignore Drush contrib
+/drush/contrib/
+
+# Ignore non-custom parts of Drupal.
+.editorconfig
+.gitattributes
+docroot/behat_failures
+docroot/core
+docroot/libraries
+docroot/modules/contrib
+docroot/profiles/contrib
+docroot/themes/contrib
+docroot/sites/default/files
+docroot/sites/simpletest
+docroot/samlsessiondb.sq3
+docroot/README.md
+
+# Ignore Composer-managed dependencies.
+docroot/vendor/
+vendor/
+
+# Ignore NPM managed dependencies
+node_modules/
+
+# Ignore local dev files
+docroot/sites/default/settings/settings.local.php
+# Prevent Devel from appearing anywhere.
+config/dev/devel.settings.yml
+config/dev/devel.toolbar.settings.yml
+config/dev/system.menu.devel.yml
+config/sync/devel.settings.yml
+config/sync/devel.toolbar.settings.yml
+config/sync/system.menu.devel.yml
+config/sync/smtp.settings.yml
+
+
+# Ignore common IDE configs
+# IntelliJ/PhpStorm
+.idea
+# Mac
+.DS_Store
+
+# Ignore CMS-CI files
+docroot/sites/sites.php
+docroot/sites/*/files
+docroot/sites/*/private
+docroot/sites/*/drushrc.php
+docroot/sites/*/aegir.services.yml
+docroot/sites/*/settings.php
+docroot/sites/*/local.settings.php
+docroot/sites/all/drush/drushrc.php
+
+!docroot/sites/default/settings.php
+
+# Ignore environment specific file
+.env
+
+# Ignore local lando config
+.lando.local.yml
+.lando/zzz*local.ini
+.lando.compose.yml
